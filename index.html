@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--  Header-->
+
+    <div class="top">
+        <div class="result">
+            <div class="result_title1">
+                asdasddfg
+            </div>
+            <div class="result_title">
+                ยอดเงินคงเหลือ
+            </div>
+            <div class="result_value">0</div>
+     <!-- 
+               <div class="result_first_sem clearfix">
+               <div class="result_first--text">Semester 1 </div>
+               <div class="right">
+                <div class="result_first--value"> 
+                
+               </div>
+               </div>
+            </div>
+               <div class="result_second_sem clearfix">
+               <div class="result_second--text">Semester 2</div>
+               <div class="right">
+                <div class="result_second--value"> 
+                 
+                 </div>    
+               </div>
+               -->
+    </div>
+
+</div>
+</div>
+
+
+        <!--  Container-->
+        <div class="bottom">
+            <div class="add">
+                <div class="add_container">
+                      <!--
+                    <select class="add_type">
+                        <option value="1">1/2563</option>
+                        <option value="2">2/2563</option>
+                    </select>
+                    -->
+                    <input type="text" class="add_text" placeholder="ชื่อรายการรับ">
+                    <input type="number" class="add_description" placeholder="รายรับ">
+                   <!--    <input type="number" class="add_value" placeholder="Grade"> -->
+                    <button class="add_btn" onclick="addRevenue()">บันทึก</button>
+
+
+                    <input type="text" class="del_text" placeholder="ชื่อรายการจ่าย">
+                    <input type="number" class="del_description" placeholder="รายจ่าย" >
+                    <!--    <input type="number" class="add_value" placeholder="Grade"> -->
+                     <button class="del_btn" onclick="addExpenditure()">บันทึก</button>
+
+                </div>
+            </div>
+            <div class="container clearfix">
+                    <div class="first_sem">
+                        <h2 class="firstTotal">ยอดรวมรายรับ 0 </h2>
+                            <div class="first_sem_list">      
+                                <table class="table1">
+                                    <tr>
+                                        <td><h2 class="first_sem_title">รายการรายรับ </h2></td>
+                                    </tr>
+                                </table>     
+                                    <table class="table1">
+                                        <tr class="row1">
+                                        </tr>
+                                    </table>
+                        </div>
+                    </div>
+
+
+                    <div class="second_sem">
+                        <h2 class="secondTotal">ยอดรวมรายจ่าย 0</h2>
+                        <div class="second_sem_list">                                              
+                            <table class="table2">
+                                <tr>
+                                    <td><h2 class="second_sem_title">รายการรายจ่าย </h2></td>   
+                                </tr>
+                            </table>
+                            <table class="table2">
+                            <tr class="row2">
+                            </tr>
+                        </table>
+                </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

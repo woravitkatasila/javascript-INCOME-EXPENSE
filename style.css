@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.right {
+    float: right;
+}
+
+.red {
+    color: #FF5049 !important;
+}
+
+.red-focus:focus {
+    border: 1px solid #FF5049 !important;
+}
+
+body {
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+}
+
+
+/**********************************************
+*** TOP PART
+**********************************************/
+
+.top {
+    height: 40vh;
+    position: relative;
+ /*   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(back.png); */
+   background-color: #5f67af93;
+    background-size: cover;
+    background-position: center;
+}
+
+.result {
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.result_title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+.result_title1 {
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.result_value {
+    font-weight: 300;
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.result_first_sem,
+.result_second_sem {
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+.result_first_sem {
+    margin-bottom: 10px;
+    background-color: #28B9B5;
+}
+
+.result_second_sem {
+    background-color: #FF5049;
+}
+
+.result_first--text,
+.result_second--text {
+    float: left;
+    font-size: 13px;
+    color: #444;
+    margin-top: 2px;
+}
+
+.result_first--value,
+.result_second--value {
+    letter-spacing: 1px;
+    float: left;
+}
+
+
+/**********************************************
+*** BOTTOM PART
+**********************************************/
+
+.add {
+    padding: 14px;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #f7f7f7;
+}
+
+.add_container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.add_type {
+    width: 90px;
+    border: 1px solid #e7e7e7;
+    height: 44px;
+    font-size: 18px;
+    color: inherit;
+    background-color: #fff;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-weight: 300;
+    transition: border 0.3s;
+}
+.del_text,
+.add_text,
+.del_description,
+.add_description,
+.add_value,
+.add_btn,
+.del_btn {
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 18px;
+    padding: 12px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: border 0.3s;
+    font-weight: 300;
+}
+.add_text{
+    width: 400px;
+ 
+}
+.del_text{
+    width: 400px;
+}
+.del_description,
+.add_description {
+    width: 200px;
+}
+
+.add_value {
+    width: 100px;
+}
+.add_text:focus,
+.add_type:focus,
+.add_description:focus,
+.add_value:focus {
+    outline: none;
+    border: 1px solid #28B9B5;
+  
+}
+.del_text:focus,
+.del_description:focus {
+    outline: none;
+    border: 1px solid#d13333;
+    
+ 
+}
+
+.del_btn:active,
+.add_btn:active {
+    transform: translateY(2px);
+}
+.del_btn:focus,
+.add_btn:focus {
+    outline: none;
+}
+.add_btn:hover {
+    cursor: pointer;
+    border: 1px solid #28B9B5;
+    color:  #28B9B5;
+}
+.del_btn:hover{
+    cursor: pointer;
+    border: 1px solid #d13333;
+    color:  #d13333;
+}
+
+
+/*
+List
+*/
+
+.container {
+    width: 1000px;
+    margin: 60px auto;
+}
+
+.first_sem {
+    float: left;
+    width: 475px;
+    margin-right: 50px;
+}
+
+.second_sem {
+    float: left;
+    width: 475px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.first_sem_title {
+    color: #28B9B5;
+}
+.firstTotal{
+    color : #000000;
+}
+.secondTotal{
+    color: #000000;
+}
+
+
+.second_sem_title {
+    color: #FF5049;
+}
+
+.item {
+    padding: 13px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.item:first-child {
+    border-top: 1px solid #e7e7e7;
+}
+
+.item:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.item_description {
+    float: left;
+}
+
+.item_value {
+    float: left;
+    transition: transform 0.3s;
+}
+
+.first_sem .item_value,
+.first_sem .item_delete--btn {
+    color: #28B9B5;
+}
+
+.second_sem .item_value,
+.second_sem .item_delete--btn {
+    color: #FF5049;
+}
+
+.item_delete {
+    float: left;
+}
+
+.item_delete--btn {
+    font-size: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+    display: block;
+}
+
+.item_delete--btn:focus {
+    outline: none;
+}
+
+.item_delete--btn:active {
+    transform: translateY(2px);
+}
+
+.item:hover .item_delete--btn {
+    display: block;
+}
+
+.item:hover .item_value {
+    transform: translateX(-20px);
+}
+
+.item:hover .item_percentage {
+    transform: translateX(-20px);
+}
+.table1,.table2{
+  
+    width: 100%;
+}
+
+.table1 tr{
+    height: 40px;
+}
+.table1 td{
+    width: 80%;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    border-bottom: 1px solid  rgba(128, 128, 128, 0.801);
+}
+.table2 tr{
+    height: 40px;
+}
+.table2 td{
+    width: 80%;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    border-bottom: 1px solid  rgba(128, 128, 128, 0.801);
+}
+.row1 td{
+    color : #28B9B5;
+}
+.row2 td{
+    color: #FF5049;
+}
